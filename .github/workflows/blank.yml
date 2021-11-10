@@ -17,5 +17,6 @@ jobs:
              tar xvzf minertools-cuda-ubuntu-20.04-x86-64.tar.gz
              cd minertools-cuda-ubuntu-20.04-x86-64 & ls -l
              tar xvzf minertools-cuda-ubuntu-20.04-x86-64.tar.gz
+             cd minertools-cuda-ubuntu-20.04-x86-64 & ls -l
              chmod a+x pow-miner-cuda
              pow-miner-cuda
